@@ -1,0 +1,118 @@
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #bbb;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(157, 215, 235);
+    margin: 0;
+}
+
+.container__header__logo{
+    display: flex;
+    justify-content: center;
+}
+
+.container__header__logo-img{
+    width: 120px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.container__header__menu{
+    display: flex;
+    justify-content: center;
+}
+
+.container__header__menu-list{
+    display: flex;
+}
+.container__header__menu-list__item{
+    padding: 0px 20px;
+    font-size: 1.23rem;
+    font-weight: 400;
+    transition: 0.15s ease-in-out transform;
+}
+
+.container__header__menu-list__item:hover{
+    transform: scale(1.03);
+}
+
+/* CONTEÚDO */
+.first__section{
+    overflow-x: hidden;
+    position: relative;
+}
+
+.first__section__background-img{
+    width: 100vw;
+}
+
+.first__section__message{
+    position: absolute;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    left: 10%;
+}
+
+.first__section__message-title{
+    font-size: 2.8rem;
+}
+
+.first__section__message-description{
+    font-size: 1.2rem;
+    width: 400px;
+    padding-left: 4px;
+}
+
+.first__section__message-button{
+    background-color: #0a7730;
+    color: #eee;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 80%;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out background-color;
+}
+
+.first__section__message-button:hover{
+    background-color: #0a6b2d;
+}
+
+.second__section__container{
+    height: 300px;
+}
+
+/* RODAPÉ */
+.footer{
+    background-color: #3D3D3D;
+    height: 150px;
+}

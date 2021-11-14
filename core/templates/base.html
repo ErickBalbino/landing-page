@@ -9,17 +9,30 @@
 
     <!-- MATERIALIZE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
 </head>
 <body>
-    <header>
-        <p>Cabeçalho</p>
+    <header class="row header">
+        <div class="col s4 container__header__logo">
+            <img class="container__header__logo-img responsive-img" src="{% static 'images/logo.png' %}" alt="logo site">
+        </div>
+
+        <div class="col s8 container__header__menu">
+            <ul class="container__header__menu-list">
+                <a href="#"><li class="container__header__menu-list__item">Blog</li></a>
+                <a href="#"><li class="container__header__menu-list__item">Produtos</li></a>
+                <a href="#"><li class="container__header__menu-list__item">Planos</li></a>
+                <a href="#"><li class="container__header__menu-list__item">Serviços</li></a>
+                <a href="#"><li class="container__header__menu-list__item">Contato</li></a>
+            </ul>
+        </div>
     </header>
 
     {% block content %}
     {% endblock %}
 
-    <footer>
-        <p>Rodapé</p>
+    <footer class="footer">
     </footer>
 </body>
 </html>
