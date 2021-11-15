@@ -7,6 +7,6 @@
 
 ### Para baixar o projeto na sua máquina, abra o terminal e coloque o código:
 ```
-$git clone "url_repositorio"
+$git clone "https://github.com/ErickBalbino/landing-page.git"
 ```
 
