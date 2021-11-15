@@ -1,2 +1,12 @@
 # Landing Page
- Landing page moderna e simples construída com django e materialize css
+ Olá, landing page construída com:
+
+ * DJANGO
+ * HTML
+ * CSS / MATERIZALIZE CSS
+
+### Para baixar o projeto na sua máquina, abra o terminal e coloque o código:
+```
+$git clone "url_repositorio"
+```
+
