@@ -191,6 +191,47 @@ body{
     background-color: #0a6b2d;
 }
 
+.fourth__section{
+    padding: 10px 0px 60px 0px ;
+}
+
+#structure-title-avaliation{
+    padding-left: 30px;
+}
+
+.fourth__section__container-title{
+    font-size:2.8rem
+}
+
+.fourth__section__container-description{
+    font-size: 1.2rem;
+    transform: translate(3px, -10px);
+}
+
+.fourth__section__container-img{
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.fourth__section__container__avaliations{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.fourth__section__container__avaliations-avaliation{
+    margin: 20px 0px;
+}
+
+.fourth__section__container__avaliations-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.fourth__section__container__avaliations-text{
+    font-size: 1.1rem;
+}
+
 /* RODAPÉ */
 .footer{
     background-color: #3D3D3D;
@@ -200,35 +241,35 @@ body{
     flex-direction: column;
 }
 
-.container__footer{
+.footer__container{
     display: flex;
     justify-content: space-around;
-    padding: 60px 0px;
+    padding: 30px 0px 70px 0px;
 }
 
-.container__footer__div{
+.footer__container__div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container__footer__logo{
+.footer__container__logo{
     width: 300px;
     object-fit: cover;
 } 
 
-.container__footer__text{
+.footer__container__text{
     color: #eee;
     font-size: 1.2rem;
 }
 
-.container__footer__list-title{
+.footer__container__list-title{
     color: #eee;
     font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container__footer__list-item{
+.footer__container__list-item{
     color: #eee;
     font-size: 1.1rem;
     padding-left: 4px;
@@ -244,12 +285,12 @@ body{
     justify-content: center;
 }
 
-.container__footer__icon{
+.footer__container__icon{
     color: #fff;
     font-size: 1.6rem;
     padding-right: 20px;
 }
 
-.container__footer__icon-text{
+.footer__container__icon-text{
     color: #fff;
 }
