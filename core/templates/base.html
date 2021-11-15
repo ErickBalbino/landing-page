@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {% endblock%}</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
 
     <!-- MATERIALIZE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -21,9 +25,9 @@
         <div class="col s8 container__header__menu">
             <ul class="container__header__menu-list">
                 <a href="#"><li class="container__header__menu-list__item">Blog</li></a>
-                <a href="#"><li class="container__header__menu-list__item">Produtos</li></a>
-                <a href="#"><li class="container__header__menu-list__item">Planos</li></a>
-                <a href="#"><li class="container__header__menu-list__item">Serviços</li></a>
+                <a href="#"><li class="container__header__menu-list__item">Produtos</li></a><i class="fas fa-angle-down container__header__menu-list__item-icon"></i>
+                <a href="#"><li class="container__header__menu-list__item">Planos</li></a><i class="fas fa-angle-down container__header__menu-list__item-icon"></i>
+                <a href="#"><li class="container__header__menu-list__item">Serviços</li></a><i class="fas fa-angle-down container__header__menu-list__item-icon"></i>
                 <a href="#"><li class="container__header__menu-list__item">Contato</li></a>
             </ul>
         </div>
@@ -33,6 +37,36 @@
     {% endblock %}
 
     <footer class="footer">
+        <section class="container__footer">
+            <div class="container__footer__div">
+                <img class="container__footer__logo responsive-img" src="{% static 'images/logo-rodape-escuro.png' %}" alt="logo rodapé site">
+                <p class="container__footer__text">Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="container__footer__div">
+                <ul class="container__footer__list">
+                    <h3 class="container__footer__list-title">Nossos Produtos</h3>
+                    <a href=""><li class="container__footer__list-item">Lorem ipsun</li></a>
+                    <a href=""><li class="container__footer__list-item">Lorem ipsun</li></a>
+                    <a href=""><li class="container__footer__list-item">Lorem ipsun</li></a>
+                    <a href=""><li class="container__footer__list-item">Lorem ipsun</li></a>
+                </ul>
+            </div>
+            <div class="container__footer__div">
+                <ul class="container__footer__list">
+                    <h3 class="container__footer__list-title">Nossos Serviços</h3>
+                    <a href=""><li class="container__footer__list-item">Lorem ipsun</li></a>
+                    <a href=""><li class="container__footer__list-item">Lorem ipsun</li></a>
+                    <a href=""><li class="container__footer__list-item">Lorem ipsun</li></a>
+                    <a href=""><li class="container__footer__list-item">Lorem ipsun</li></a>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container__footer" id="structure-rodape">
+            <i class="fas fa-headset container__footer__icon"></i>
+
+            <p class="container__footer__icon-text">(XX) XXXXX-XXXX ATENDIMENTO 24 HORAS -- Ligue para nós</p>
+        </section>
     </footer>
 </body>
 </html>
